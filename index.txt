@@ -1,0 +1,44 @@
+
+        <a href='https://www.40servidoresmc.es/egipto-craft' target='_blank' class="vote-link">
+            <img src='https://www.40servidoresmc.es/img/botonvota.png' alt='Vota por Egipto Craft'>
+        </a>
+
+        
+
+
+
+        
+/* Estilo para el enlace principal (Servidores de Minecraft) */
+a.main-link {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #f08930;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    position: fixed;
+    top: 10px;
+    left: 10px; /* Enlace en la esquina superior izquierda */
+}
+
+a.main-link:hover {
+    background-color: #a66023;
+}
+
+/* Estilo para la imagen dentro del enlace Vota por el servidor */
+a.vote-link img {
+    max-width: 160px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: fixed;
+    top: 10px;
+    right: 10px; /* Imagen en la esquina superior derecha */
+}
+
+/* Efecto hover sobre la imagen */
+a.vote-link img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
