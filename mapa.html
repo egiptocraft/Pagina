@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EgiptoCraft -- Mapa Earth</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="egipto.png" type="image/png">
+    <script>
+        function confirmExit() {
+            // Muestra el cuadro de confirmación
+            const userConfirmed = confirm("Estás saliendo de EgiptoCraft. ¿Estás seguro?");
+            if (userConfirmed) {
+                // Si el usuario confirma, redirige al enlace
+                window.location.href = "http://23.230.3.194:25770/#world:-134:-8:44:100:1.46:1.23:0:0:perspective";
+            } else {
+                // Si el usuario cancela, no hace nada
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="header-banner">
+        <img src="egipto.png" alt="Egiptocraft">
+
+        <!-- Botón hamburguesa -->
+        <div class="menu-toggle" id="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <!-- Menú -->
+        <div class="menu" id="menu">
+            <a href="index.html">Bienvenida</a>
+            <a href="vota.html">Vota</a>
+            <a href="tienda.html">Tienda</a>
+            <a href="javascript:void(0);" onclick="confirmExit()">Mapa</a> <!-- Modificado para activar el confirmExit() -->
+            <a href="discord.html">Discord</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <h1>¡Visita el mapa del Earth!</h1>
+        <p>¿Estás interesado en explorar el mapa 3D de todo el planeta Tierra en su totalidad? Si deseas experimentar una vista completa y detallada de la Tierra en tres dimensiones, ¡estás en el lugar correcto! Únete a nosotros y navega por este fascinante mapa interactivo. Simplemente haz clic en el siguiente botón para comenzar tu aventura visual y descubrir el mundo como nunca antes lo habías visto. ¡Haz clic y comienza a explorar ahora!</p>
+        <!-- Botón del mapa (desactivado, ya se maneja desde el menú) -->
+        <div class="tienda">
+            <a href="javascript:void(0);" onclick="confirmExit()">Mapa</a> <!-- Modificado para activar el confirmExit() -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

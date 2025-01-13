@@ -1,0 +1,202 @@
+/* Reset básico para quitar márgenes y paddings por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo global para el cuerpo */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    padding: 0;
+    width: 100%; /* Asegura que el fondo ocupe todo el ancho */
+    min-height: 100vh; /* Asegura que el fondo cubra toda la altura de la ventana */
+    color: #333; /* Color de texto principal */
+    padding-top: 80px; /* Evita que el contenido quede debajo del header fijo */
+}
+
+/* Estilo para el contenedor del banner */
+.header-banner {
+    background-color: #e87715; /* Color del banner */
+    color: #e8d507; /* Color de los enlaces */
+    padding: 20px 10px;
+    position: fixed; /* Fijamos el banner en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%; /* Asegura que el banner ocupe todo el ancho */
+    z-index: 1000; /* Asegura que esté por encima del contenido */
+    display: flex;
+    justify-content: flex-end; /* Alinea los enlaces a la derecha */
+    align-items: center; /* Asegura que los enlaces estén alineados verticalmente */
+    height: 80px; /* Ajuste la altura para que se vea bien el banner */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    border-bottom: 4px solid #e8d507; /* Línea decorativa debajo del banner */
+}
+
+/* Estilo para la imagen 'egipto.png' */
+img[src="egipto.png"] {
+    position: absolute;
+    top: -5px;
+    left: 10px;
+    display: block; /* Hace que la imagen se trate como un bloque */
+    max-width: 80px; /* Limita el tamaño máximo de la imagen */
+    height: auto; /* Mantiene las proporciones de la imagen */
+}
+
+/* Estilo para los enlaces dentro del banner */
+.header-banner a {
+    color: #e8d507; /* Color amarillo */
+    font-size: 18px;
+    text-decoration: none; /* Elimina el subrayado */
+    font-weight: 600; /* Un poco más grueso */
+    transition: color 0.3s ease, transform 0.3s ease; /* Efecto de transición para el color y la transformación */
+    letter-spacing: 1px; /* Espaciado entre letras */
+    padding: 5px 15px; /* Padding para hacer los enlaces más "botonosos" */
+    border-radius: 8px; /* Bordes redondeados */
+    margin-left: 20px; /* Espaciado entre los enlaces */
+}
+
+/* Efecto hover para los enlaces */
+.header-banner a:hover {
+    color: white; /* Cambia el color a blanco cuando se pasa el ratón */
+    background-color: #e8d507; /* Fondo amarillo */
+    transform: translateY(-3px); /* Efecto sutil de elevación */
+}
+
+/* Estilo para el contenido principal */
+.main-content {
+    margin-top: 10px; /* Deja espacio para el banner fijo */
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra en el contenido */
+    max-width: 1200px; /* Limita el ancho máximo */
+    margin-left: auto;
+    margin-right: auto; /* Centra el contenido en la página */
+}
+
+/* Estilos para los encabezados */
+.main-content h1 {
+    color: #e87715; /* Color de los encabezados */
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+.main-content h2 {
+    color: #e87715; /* Color de los encabezados */
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+.main-content h3 {
+    color: black; /* Color de los encabezados */
+    margin-left: -10px;
+    padding: 10px;
+}
+
+.main-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px; /* Espaciado entre párrafos */
+}
+
+/* Estilo para los enlaces dentro de la tienda */
+.tienda a {
+    color: #e8d507; /* Color amarillo */
+    font-size: 18px;
+    text-decoration: none; /* Elimina el subrayado */
+    font-weight: 600; /* Un poco más grueso */
+    transition: color 0.3s ease, transform 0.3s ease; /* Efecto de transición para el color y la transformación */
+    letter-spacing: 1px; /* Espaciado entre letras */
+    padding: 5px 15px; /* Padding para hacer los enlaces más "botonosos" */
+    border-radius: 8px; /* Bordes redondeados */
+    margin-left: 0px; /* Espaciado entre los enlaces */
+    background-color: #e87715;
+}
+
+/* Efecto hover para los enlaces */
+.tienda a:hover {
+    color: white; /* Cambia el color a blanco cuando se pasa el ratón */
+    background-color: #e8d507; /* Fondo amarillo */
+    transform: translateY(-3px); /* Efecto sutil de elevación */
+}
+
+/* Estilo para la imagen dentro del enlace Vota por el servidor */
+a.vote-link img {
+    max-width: 160px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    top: 1000px; /* Si no es necesario, puedes eliminarlo */
+}
+
+/* Efecto hover sobre la imagen */
+a.vote-link img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Estilos del menú en pantallas pequeñas */
+.menu {
+    display: flex;
+}
+
+.menu a {
+    margin-left: 20px;
+}
+
+/* Estilos del botón hamburguesa */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 4px;
+    margin: 4px 0;
+    background-color: #e8d507;
+    transition: 0.3s;
+}
+
+/* Responsivo: cuando la pantalla sea más pequeña que 768px */
+@media screen and (max-width: 768px) {
+    /* Mostrar el botón hamburguesa y ocultar el menú */
+    .menu {
+        display: none;
+        width: 100%;
+        text-align: center;
+        background-color: #e87715;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    .menu a {
+        display: block;
+        margin: 15px 0;
+    }
+
+    .menu-toggle {
+        display: flex; /* Mostrar el botón hamburguesa */
+    }
+
+    /* Animación para abrir/cerrar el menú */
+    .menu.show {
+        display: block;
+    }
+
+    /* Cambiar la apariencia del botón hamburguesa cuando está abierto */
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}

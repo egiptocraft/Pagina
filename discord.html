@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EgiptoCraft -- Discord</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="egipto.png" type="image/png">
+    <script>
+        function confirmExit() {
+            // Muestra el cuadro de confirmación
+            const userConfirmed = confirm("Estás saliendo de EgiptoCraft. ¿Estás seguro?");
+            if (userConfirmed) {
+                // Si el usuario confirma, redirige al enlace
+                window.location.href = "https://discord.com/invite/YS7Mk2brA3"; // Enlace al Discord
+            } else {
+                // Si el usuario cancela, no hace nada
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="header-banner">
+        <img src="egipto.png" alt="Egiptocraft">
+
+        <!-- Botón hamburguesa -->
+        <div class="menu-toggle" id="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <!-- Menú -->
+        <div class="menu" id="menu">
+            <a href="index.html">Bienvenida</a>
+            <a href="vota.html">Vota</a>
+            <a href="tienda.html">Tienda</a>
+            <a href="mapa.html">Mapa</a>
+            <a href="discord.html">Discord</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <h1>¡Únete a nuestro Discord!</h1>
+        <p>¿Te encanta EgiptoCraft y quieres estar al tanto de todas las novedades? ¡Únete a nuestra comunidad en Discord! Aquí podrás interactuar con otros jugadores, participar en eventos exclusivos, y ser parte de una comunidad activa y divertida. Nuestro servidor de Discord es el lugar perfecto para hablar con otros jugadores, hacer preguntas, compartir tus experiencias y recibir noticias de última hora sobre el servidor.</p>
+        <p>Además, puedes obtener soporte directo para resolver cualquier problema que tengas mientras juegas. Los administradores y moderadores siempre están disponibles para ayudarte. ¡Y no olvides que organizamos sorteos, concursos y promociones especiales solo para los miembros de Discord!</p>
+        <p>Únete ahora mismo y no te pierdas la oportunidad de ser parte de lo mejor de EgiptoCraft. ¡Haz clic en el enlace de abajo y empieza a chatear con otros jugadores de todo el mundo!</p>
+        
+        <div class="tienda">
+            <a href="javascript:void(0);" onclick="confirmExit()">Unirse al Discord</a> <!-- Enlace con confirmación -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

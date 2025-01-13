@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EgiptoCraft -- Tienda</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="egipto.png" type="image/png">
+    <script>
+        function confirmExit() {
+            // Muestra el cuadro de confirmación
+            const userConfirmed = confirm("Estás saliendo de EgiptoCraft. ¿Estás seguro?");
+            if (userConfirmed) {
+                // Si el usuario confirma, redirige al enlace
+                window.location.href = "https://egiptocraft.tebex.io/";
+            } else {
+                // Si el usuario cancela, no hace nada
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="header-banner">
+        <img src="egipto.png" alt="Egiptocraft">
+
+        <!-- Botón hamburguesa -->
+        <div class="menu-toggle" id="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <!-- Menú -->
+        <div class="menu" id="menu">
+            <a href="index.html">Bienvenida</a>
+            <a href="vota.html">Vota</a>
+            <a href="tienda.html">Tienda</a>
+            <a href="mapa.html">Mapa</a>
+            <a href="discord.html">Discord</a>
+        </div>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="main-content">
+        <h1>Visita Nuestra tienda</h1>
+        <p>Visita nuestra tienda a través del siguiente botón. La tienda oficial es uno de los puntos más importantes de esta página. Aquí encontrarás una amplia variedad de productos diseñados para enriquecer tu experiencia dentro de EgiptoCraft. Desde rangos especiales, que te otorgan privilegios exclusivos y mejoras en tu cuenta, hasta objetos cosméticos que te permitirán personalizar tu avatar y destacar entre otros jugadores. 
+
+        Nuestra tienda ha sido cuidadosamente diseñada para ofrecerte todo lo que necesitas para disfrutar al máximo de nuestro servidor. Los rangos no solo te brindan beneficios prácticos, como acceso a áreas exclusivas o nuevas funcionalidades, sino que también representan una forma de apoyar al servidor y su continuo desarrollo. Además, contamos con promociones y ofertas especiales para que puedas aprovechar al máximo tu inversión. ¡No te lo pierdas!</p>
+        <h3>Visítalo a través de:</h3>
+        <div class="tienda">
+            <a href="javascript:void(0);" onclick="confirmExit()">Tienda</a> <!-- Modificado para activar el confirmExit() -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
